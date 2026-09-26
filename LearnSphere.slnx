@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="LearnSphere.API/LearnSphere.API.csproj" />
+  <Project Path="LearnSphere.DAL/LearnSphere.DAL.csproj" Id="96345804-612f-4079-be36-f51b4f459c62" />
+  <Project Path="LearnSphere.Repo/LearnSphere.Repo.csproj" Id="f47ca6c8-e634-480f-8698-854700206435" />
+  <Project Path="LearnSphere.Services/LearnSphere.Services.csproj" Id="d5a735a2-183a-4702-87a5-e81a07a69dab" />
+  <Project Path="LearnSphere.Shared/LearnSphere.Shared.csproj" Id="c5627a81-9414-4c61-8a40-5dd37e23f060" />
+</Solution>

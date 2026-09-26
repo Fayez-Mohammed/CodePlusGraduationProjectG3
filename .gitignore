@@ -1,0 +1,87 @@
+##======================================
+## Build & Output Artifacts
+##======================================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+*.Publish.xml
+*.pubxml
+*.azurePubxml
+
+##======================================
+## Visual Studio & Rider Cache / Config
+##======================================
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+##======================================
+## Environment, Secrets & Local Settings
+##======================================
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+*.local.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+##======================================
+## Entity Framework & Database Files
+##======================================
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+
+##======================================
+## LearnSphere Uploaded Assets (Media Storage)
+##======================================
+# Ignore runtime uploaded media in wwwroot/uploads
+**/wwwroot/uploads/*
+!**/wwwroot/uploads/.gitkeep
+
+# Ignore root uploads directory if used outside wwwroot
+uploads/
+!uploads/.gitkeep
+
+##======================================
+## Test & Coverage Results
+##======================================
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+##======================================
+## OS Generated Files
+##======================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+##======================================
+## Package Management & Tooling
+##======================================
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+.nuget/
