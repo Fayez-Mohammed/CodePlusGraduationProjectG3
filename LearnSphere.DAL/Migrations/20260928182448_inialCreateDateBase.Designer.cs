@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LearnSphere.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260803102010_Init")]
-    partial class Init
+    [Migration("20260928182448_inialCreateDateBase")]
+    partial class inialCreateDateBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
@@ -75,6 +78,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DiscountType")
@@ -211,9 +217,15 @@ namespace LearnSphere.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("ImageURL")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -241,6 +253,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -309,6 +324,9 @@ namespace LearnSphere.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("bit");
 
@@ -340,6 +358,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("DisplayOrder")
@@ -388,6 +409,9 @@ namespace LearnSphere.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("bit");
 
@@ -425,6 +449,9 @@ namespace LearnSphere.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -457,6 +484,9 @@ namespace LearnSphere.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsCorrect")
                         .HasColumnType("bit");
 
@@ -487,6 +517,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
@@ -522,6 +555,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
@@ -564,6 +600,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("DisplayOrder")
@@ -775,6 +814,9 @@ namespace LearnSphere.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
