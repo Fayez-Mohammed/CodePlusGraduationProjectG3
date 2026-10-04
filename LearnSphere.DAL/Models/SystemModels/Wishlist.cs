@@ -1,7 +1,7 @@
 ﻿using LearnSphere.DAL.Models.BaseModels;
 using LearnSphere.DAL.Models.SystemModels;
 
-public class Wishlist//:BaseEntity
+public class Wishlist:BaseEntity
 {
     public DateTime AddedAt { get; set; } = DateTime.UtcNow;
 
