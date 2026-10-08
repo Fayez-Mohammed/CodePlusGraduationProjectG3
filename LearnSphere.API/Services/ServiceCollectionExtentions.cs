@@ -53,6 +53,7 @@ namespace LearnSphere.API.Services
             services.AddScoped<ISectionService, SectionService>();
             services.AddScoped<ILessonsService, LessonService>();
             services.AddScoped<IProgressService, ProgressService>();
+            services.AddScoped<IEnrollmentService, EnrollmentService>();
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyMarker>();
             services.AddAutoMapper(au => { },typeof(ApplicationAssemblyMarker).Assembly);
